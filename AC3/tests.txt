@@ -1,0 +1,7 @@
+python fetch_puzzle.py 4 1 110 | python solve_puzzle.py > ../results.txt
+python fetch_puzzle.py 5 1 110 | python solve_puzzle.py > ../results.txt
+python fetch_puzzle.py 6 1 110 | python solve_puzzle.py > ../results.txt
+python fetch_puzzle.py 7 1 110 | python solve_puzzle.py > ../results.txt
+python fetch_puzzle.py 8 1 110 | python solve_puzzle.py > ../results.txt
+python fetch_puzzle.py 9 1 110 | python solve_puzzle.py > ../results.txt
+
