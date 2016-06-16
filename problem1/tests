@@ -1,0 +1,17 @@
+python problem21_2.py < input1.txt
+python problem21_3.py < input1.txt
+python problem21_4.py < input1.txt
+python problem21_5.py < input1.txt
+python problem21_6.py < input1.txt
+
+python problem22_2.py < input2.txt
+python problem22_3.py < input2.txt
+python problem22_4.py < input2.txt
+python problem22_5.py < input2.txt
+python problem22_6.py < input2.txt
+
+python problem23_2.py < input3.txt
+python problem23_3.py < input3.txt
+python problem23_4.py < input3.txt
+python problem23_5.py < input3.txt
+python problem23_6.py < input3.txt

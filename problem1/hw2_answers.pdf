@@ -1,0 +1,62 @@
+=======================================================
+Problem 2 Part 1
+=======================================================
+2. I made a FIFO queue out of a list in utils.py.  I would check the initial input to see if it was 
+already clean, else I would enqueue an empty string as well as the input state into 2 queues.  
+I would hass this off into a while case that would only change if a finished state was ever 
+reached.  For each while loop, a check would happen.  If it was not clean yet, I would dequeue a 
+path string as well as a state.  I would then call checks to see if a move to the left, right, or
+ suck was a visited state already using a checker.  If they were not visited, I would enqueue 
+ them in that respective order.  
+
+3. Same as part 2, but instead of a queue, I used a LIFO stack.  Rather than enqueue and dequeue, 
+I would pop or append.  
+
+4. For DLS, I would check to see if the state was clean.  Else, I would pass 3 lists that held 
+the path visited, a stack of states appended, and a stack of path strings. In the recursive DLS 
+case, I would do a depth first seach, but have a depth counter that would stop the search from continuing if it went too far.
+
+5. For IDDFS, I did the same as part 4, but would check depths by row rather than depth.  It would
+check to see if the current node had a clean state, then the next level of leaves, then etc etc.
+
+6. For the A*, I broke down the possible states that a room could be in.  After a check to see if
+the current state was not clean, I broke down the cases that were possible (i.e. current room 
+dirty, both rooms dirty, etc) and would use the tiebreaker states to determine which state to 
+transition to.
+
+=======================================================
+Problem 2 Part 2
+=======================================================
+2. I made a FIFO queue out of a list in utils.py.  I would check the initial input to see if it was 
+already clean, else I would enqueue an empty string as well as the input state into 2 queues.  
+I would hass this off into a while case that would only change if a finished state was ever 
+reached.  For each while loop, a check would happen.  If it was not clean yet, I would dequeue a 
+path string as well as a state.  I would then call checks to see if a move to the left, right, or
+ suck was a visited state already using a checker.  If they were not visited, I would enqueue 
+ them in that respective order.  
+
+3. Same as part 2, but instead of a queue, I used a LIFO stack.  Rather than enqueue and dequeue, 
+I would pop or append.  
+
+4. I used a LIFO stack. For DLS, I would check to see if the state was clean.  Else, I would pass 3 lists that held 
+the path visited, a stack of states appended, and a stack of path strings. In the recursive DLS 
+case, I would do a depth first seach, but have a depth counter that would stop the search from continuing if it went too far.
+
+5. I used a LIFO stack. For IDDFS, I did the same as part 4, but would check depths 
+by row rather than depth.  It wouldcheck to see if the current node had a clean state, then the 
+next level of leaves, then etc etc.
+
+6. I used a LIFO stack. For the A*, I broke down the possible 
+states that a room could be in.  After a check to see if
+the current state was not clean, I broke down the cases that were possible (i.e. current room 
+dirty, both rooms dirty, etc) and would use the tiebreaker states to determine which state to 
+transition to.  I also made a function called heur_search that would check to see if there was an 
+optimal path by seeing if there was a dirty room to its left and/or right and compare the
+distances between the two in order to make a choice, or default if the conditions were a tie.
+
+=======================================================
+Problem 2 Part 3
+=======================================================
+Everything was about the same.  The main difference was that rather that use a tuple, I used a 2d 
+grid in order to convey the matrix given.  Also, with the newly added given states, I had to add 
+checks for the new state and see if it was visited.  In part 6, my heur_search was also noticibly longer due to the growth of possible states.  
